@@ -2583,6 +2583,10 @@ End {
 }
 }
 }
+Write-SectionHeader "set time zone"
+Set-TimeZone -Id "W. Europe Standard Time"
+$currentdate = Get-Date
+Write-SectionHeader "$currentdate"
 
 
 Write-SectionHeader "Executing CustomWindowsAutopilotInfo"
