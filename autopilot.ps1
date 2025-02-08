@@ -2585,8 +2585,7 @@ End {
 }
 Write-SectionHeader "set time zone"
 Set-TimeZone -Id "W. Europe Standard Time"
-w32tm /config /manualpeerlist:"time.windows.com" /syncfromflags:manual /update
-w32tm /resync
+Set-Date -Date "08.02.2025 12:00:00"
 $currentdate = Get-Date
 Write-SectionHeader "$currentdate"
 
